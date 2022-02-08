@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
 	const PF =
-		"https://simplewholesome.herokuapp.com/images/";
+		"https://biatablog.herokuapp.com/images/";
 	return (
 		<div className="post">
 			{post.photo && (
