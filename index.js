@@ -50,7 +50,7 @@ app.use("/api/categories", categoryRoute);
 
 app.use(
 	express.static(
-		path.join(__dirname, "/blogappfrontend/build")
+		path.join(__dirname, "/client/build")
 	)
 );
 
@@ -58,7 +58,7 @@ app.get("*", (req, res) => {
 	res.sendFile(
 		path.join(
 			__dirname,
-			"/blogappfrontend/build",
+			"/client/build",
 			"index.html"
 		)
 	);
